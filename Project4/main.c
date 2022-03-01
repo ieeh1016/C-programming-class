@@ -2,6 +2,8 @@
 
 int main(void) {
 	
-	char For = "Hello World";
-	printf("%d", For);
+	int a = 10;
+
+	int c = 20;
+	printf("%d", a+c);
 }
