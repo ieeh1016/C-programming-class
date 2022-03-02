@@ -5,5 +5,5 @@ int main(void) {
 	int a = 10;
 
 	int c = 20;
-	printf("%d", a+c);
+	printf("%d", 2*a+c);
 }
