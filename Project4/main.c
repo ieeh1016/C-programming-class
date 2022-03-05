@@ -2,7 +2,7 @@
 
 int main(void) {
 	
-	int a = 20;
+	int a = 250;
 
 	int c = 30;
 	printf("%d", 2*a+c);
