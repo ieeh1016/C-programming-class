@@ -6,4 +6,6 @@ int main(void) {
 
 	int c = 30;
 	printf("%d", 2*a+c);
+
+	return 0;
 }
