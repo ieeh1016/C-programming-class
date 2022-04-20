@@ -6,17 +6,17 @@ int main(void)
 	
 
 	while (1) {
-		int sum_step = 0;
-		int sum_final = 0;
-		printf("[입력] 1~100사이의 정수값 중 짝수값을 입력하세요 : ");
+		int sum_step = 0; //최종합계 정수값에 도달하기 전까지의 합
+		int sum_final = 0; //최종합계 정수값
+		printf("[입력] 1~100사이의 정수값 중 짝수값을 입력하세요 : "); 
 		scanf_s("%d", &number);
-		if (number >= 0 && number<=100) {
+		if (number >= 0 && number<=100) {  
 			if (number % 2 != 0) {
-				printf("짝수값만 입력해야 합니다. 다시 입력하세요.\n\n");
+				printf("짝수값만 입력해야 합니다. 다시 입력하세요.\n\n"); //입력한 정수값이 0~100 사이 이지만 짝수가 아닐떄는 다시 입력하라는 문구를 출력한다.
 				continue;
 			}
 			else {
-				for (int i = 1; i <= number; i++) {
+				for (int i = 1; i <= number; i++) { //입력한 정수값이 0~100 사이이고 짝수 일때 문제에 나온 식처럼 합계를 구한다. 
 					sum_step = sum_step + i;
 					sum_final = sum_final + sum_step;
 				}
@@ -25,7 +25,7 @@ int main(void)
 			}
 		}
 		else {
-			printf("프로그램을 종료합니다.\n");
+			printf("프로그램을 종료합니다.\n"); //입력한 정수값이 0~100 사이가 아니면 프로그램을 종료한다
 			break;
 		}
 	}
