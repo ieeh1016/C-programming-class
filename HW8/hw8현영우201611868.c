@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int main(void) 
+int main(void)
 {
+	int check = 1;
 	int number = 0; //입력받을 정수
 	int count1 = 0; //0~9 의 숫자를 카운트하는 변수
 	int count2 = 0; //10~19 의 숫자를 카운트하는 변수
 	int count3 = 0; //20~29 의 숫자를 카운트하는 변수
 
 	printf("0~29사이의 정수를 입력 받아 10단위로 개수를 세고,개수만큼 *로 표현\n입력 종료(0~29사이 이외의 정수)\n");
-	while (1) {
+	while (check > 0) {
 		printf("수 : ");
 		scanf_s("%d", &number);
 		if (number >= 0 && number <= 9) {    //0~9 or 10~19 or 20~29 일떄를 확인하여 각각의 변수를 +1 시킴
@@ -21,7 +22,7 @@ int main(void)
 			count3++;
 		}
 		else {
-			break;
+			check = 0;
 		}
 	}
 	printf("0 - 9 : ");
@@ -37,7 +38,7 @@ int main(void)
 		printf("*");
 	}
 
-	
+
 
 	return 0;
 
