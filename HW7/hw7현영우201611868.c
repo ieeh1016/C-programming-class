@@ -1,7 +1,7 @@
 #include <stdio.h>
-    
+
 int main() {
-    
+
     const int dollar = 1116;  //기호상수를 통해 각 화폐별 금액을 저장
     const int yen = 10;
     const int yuan = 170;
@@ -30,7 +30,7 @@ int main() {
 
     if (age >= 0 && 6 >= age) { //나이별로 할인되는 요금을 다르게 하여 저장
         change_price = (double)price - ((double)price * child);
-        printf("\n\n\n무료탑승입니다.  즐거운 여행 되세요.");
+        printf("\n\n\n무료탑승입니다.즐거운 여행 되세요.");
     }
     else if (age >= 7 && 18 >= age) {
         change_price = (double)price - ((double)price * youth);
@@ -42,7 +42,7 @@ int main() {
         change_price = (double)price - ((double)price * old);
     }
 
-  
+
     if (change_price != 0) { // 할인된요금이 0원이 아니면 해당 조건문 시행
         printf("2. 사용할 화폐 국가를 입력하세요 (미국은 1, 일본은 2, 중국은 3, 독일은 4, 프랑스는 5, 한국은 그 이외 숫자 입력) : ");
         scanf_s("%d", &nation);
@@ -144,7 +144,7 @@ int main() {
         }
 
     }
-   
+
     return 0;
 
 }
